@@ -23,7 +23,7 @@ public class AuthTest {
         $("[data-test-id='login'] [name='login']").setValue(RegistrationInfo.getLogin());
         $("[data-test-id='password'] [name='password']").setValue(RegistrationInfo.getPassword());
         $("[data-test-id='action-login'] [class='button__text']").click();
-        $("[id=root]").shouldHave(text("Личный кабинет"));
+        $("h2").shouldHave(text("Личный кабинет"));
     }
 
     @Test
